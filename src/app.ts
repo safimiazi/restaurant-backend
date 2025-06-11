@@ -17,8 +17,8 @@ app.use(cookieParser());
 
 
 app.use(cors({
-  origin: "http://localhost:3000", // frontend URL
-  credentials: true               // jodi cookie/token pathaos
+  origin: "*",           // Allow all origins
+  credentials: true      // Allow cookies and authorization headers
 }));
 
 // Set up static file serving for uploads
